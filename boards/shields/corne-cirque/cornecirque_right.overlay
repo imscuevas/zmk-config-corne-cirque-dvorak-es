@@ -5,6 +5,7 @@
  */
 
 #include "cornecirque.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -31,4 +32,9 @@
 
 &glidepoint_listener {
     status = "okay";
+
+    scroll_mode {
+        layers = <4>;
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 16>;
+    };
 };
