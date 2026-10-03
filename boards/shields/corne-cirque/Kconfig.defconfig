@@ -1,4 +1,4 @@
-if SHIELD_CORNECIRQUE_RIGHT
+if SHIELD_CORNECIRQUE_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "CorneCirque"
@@ -6,8 +6,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_POINTING
-    default y
+endif
+
+if SHIELD_CORNECIRQUE_RIGHT
 
 config I2C
     default y
@@ -17,6 +18,9 @@ endif
 if SHIELD_CORNECIRQUE_RIGHT || SHIELD_CORNECIRQUE_LEFT
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_POINTING
     default y
 
 if ZMK_DISPLAY

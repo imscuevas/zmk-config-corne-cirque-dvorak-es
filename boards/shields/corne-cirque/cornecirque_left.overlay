@@ -5,6 +5,8 @@
  */
 
 #include "cornecirque.dtsi"
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &kscan0 {
     col-gpios
@@ -15,4 +17,13 @@
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>
         ;
+};
+
+&glidepoint_listener {
+    status = "okay";
+
+    scroll_mode {
+        layers = <4>;
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 16>;
+    };
 };

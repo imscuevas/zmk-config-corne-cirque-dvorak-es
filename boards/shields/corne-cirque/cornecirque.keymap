@@ -54,6 +54,7 @@
             >;
 
             label = "Base";
+            display-name = "Base";
         };
 
         num {
@@ -65,6 +66,7 @@
             >;
 
             label = "Numbers";
+            display-name = "Numbers";
         };
 
         nav {
@@ -76,6 +78,7 @@
             >;
 
             label = "Navigation";
+            display-name = "Navigation";
         };
 
         mouse {
@@ -87,6 +90,7 @@
             >;
 
             label = "Mouse";
+            display-name = "Mouse";
         };
 
         scroll {
@@ -98,6 +102,7 @@
             >;
 
             label = "Scroll";
+            display-name = "Scroll";
         };
     };
 };

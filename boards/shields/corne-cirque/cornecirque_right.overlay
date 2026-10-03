@@ -30,11 +30,6 @@
     status = "okay";
 };
 
-&glidepoint_listener {
-    status = "okay";
-
-    scroll_mode {
-        layers = <4>;
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 16>;
-    };
+&glidepoint_split {
+    device = <&glidepoint>;
 };
