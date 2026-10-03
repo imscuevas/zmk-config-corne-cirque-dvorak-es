@@ -50,7 +50,7 @@
 &none         &kp DOT       &kp COMMA  &kp SEMI       &kp P        &kp Y   &kp F           &kp G           &kp C          &kp H     &kp L         &kp MINUS
 &kp CAPSLOCK  &hm LGUI A    &hm LALT O      &hm LCTRL E    &hm LSHFT U  &kp I   &kp D           &hm RSHFT R     &hm RCTRL T    &hm LALT N     &hm RGUI S    &kp SQT
 &none         &ltqa 3 FSLH  &hm RALT Q           &kp J     &kp K        &kp X   &kp B           &kp M           &kp W          &hm RALT V          &ltqa 3 Z     &none
-                                            &kp ESCAPE     &ltq 2 SPACE &kp TAB &ltq 5 BACKSPACE   &ltq 1 ENTER    &kp DELETE
+                                            &kp ESCAPE     &ltq 2 SPACE &kp TAB &ltq 5 BACKSPACE   &ltq 1 ENTER    &ltq 6 DELETE
             >;
 
             label = "Base";
@@ -77,8 +77,8 @@
                            &none  &none  &none    &kp BSPC     &kp RET       &kp DEL
             >;
 
-            label = "Navigation";
-            display-name = "Navigation";
+            label = "Nav";
+            display-name = "Nav";
         };
 
         mouse {
@@ -115,6 +115,18 @@
 
             label = "Symbols";
             display-name = "Symbols";
+        };
+
+        function {
+            bindings = <
+&none   &kp F12   &kp F7   &kp F8       &kp F9       &kp PSCRN       &none   &none   &none   &none   &none   &none
+&none   &kp F11   &kp F4   &kp F5       &kp F6       &none       &none   &kp LSHFT   &kp LCTRL   &kp LALT   &kp LGUI    &none
+&none   &kp F10   &kp F1   &kp F2       &kp F3       &none       &none   &none   &none   &none   &kp RALT   &none
+                        &none       &kp K_MENU       &none       &none   &none   &none
+            >;
+
+            label = "Function";
+            display-name = "Function";
         };
     };
 };
