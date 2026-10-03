@@ -47,10 +47,10 @@
 
         base {
             bindings = <
-&none         &kp DOT       &hm RALT COMMA  &kp SEMI       &kp P        &kp Y   &kp F           &kp G           &kp C          &hm RALT H     &kp L         &kp MINUS
+&none         &kp DOT       &kp COMMA  &kp SEMI       &kp P        &kp Y   &kp F           &kp G           &kp C          &kp H     &kp L         &kp MINUS
 &kp CAPSLOCK  &hm LGUI A    &hm LALT O      &hm LCTRL E    &hm LSHFT U  &kp I   &kp D           &hm RSHFT R     &hm RCTRL T    &hm LALT N     &hm RGUI S    &kp SQT
-&none         &ltqa 3 FSLH  &kp Q           &kp J          &kp K        &kp X   &kp B           &kp M           &kp W          &kp V          &ltqa 3 Z     &none
-                                            &kp ESCAPE     &ltq 2 SPACE &kp TAB &kp BACKSPACE   &ltq 1 ENTER    &kp DELETE
+&none         &ltqa 3 FSLH  &hm RALT Q           &kp J     &kp K        &kp X   &kp B           &kp M           &kp W          &hm RALT V          &ltqa 3 Z     &none
+                                            &kp ESCAPE     &ltq 2 SPACE &kp TAB &ltq 5 BACKSPACE   &ltq 1 ENTER    &kp DELETE
             >;
 
             label = "Base";
@@ -86,7 +86,7 @@
 &none   &none   &none   &none       &none       &none       &none   &none   &none   &none   &none   &none
 &none   &none   &none   &mkp MB4    &mkp MB5    &none       &none   &none   &none   &none   &none   &none
 &none   &none   &mo 4   &none       &none       &none       &none   &none   &none   &mo 4   &none   &none
-                        &mkp MB3    &mkp MB1    &mkp MB2    &none   &none   &none
+                        &mkp MB3    &mkp MB1    &mkp MB2    &mkp MB2   &mkp MB1   &mkp MB3
             >;
 
             label = "Mouse";
@@ -103,6 +103,18 @@
 
             label = "Scroll";
             display-name = "Scroll";
+        };
+
+        symbols {
+            bindings = <
+&none   &kp EQUAL  &kp LS(N1)   &kp RA(LBRC)       &kp RA(RBRC)       &none   &none   &none   &none   &none   &none &none
+&none   &kp LS(EQUAL)   &kp LS(MINUS)   &kp LS(8)       &kp LS(9)       &none       &none   &kp LSHFT   &kp LCTRL   &kp LALT   &kp LGUI   &none
+&none   &kp NUBS   &kp LS(NUBS)   &kp RA(APOS)      &kp RA(BSLH)       &none       &none   &none   &none   &none   &none   &none
+                        &none       &none       &none       &none   &none   &none
+            >;
+
+            label = "Symbols";
+            display-name = "Symbols";
         };
     };
 };
