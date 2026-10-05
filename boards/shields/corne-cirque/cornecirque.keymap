@@ -118,10 +118,10 @@
 
         base {
             bindings = <
-&none         &kp DOT       &kp COMMA  &kp SEMI       &kp P        &kp Y   &kp F           &kp G           &kp C          &kp H     &kp L         &kp MINUS
-&kp CAPSLOCK  &hm LGUI A    &hm LALT O      &hm LCTRL E    &hm LSHFT U  &kp I   &kp D           &hm RSHFT R     &hm RCTRL T    &hm LALT N     &hm RGUI S    &kp SQT
-&none         &ltqa 3 FSLH  &hm RALT Q           &kp J     &kp K        &kp X   &kp B           &kp M           &kp W          &hm RALT V          &ltqa 3 Z     &none
-                                            &ltq 7 ESCAPE     &ltq 2 SPACE &kp TAB &ltq 5 BACKSPACE   &ltq 1 ENTER    &ltq 6 DELETE
+                &none        &kp Q      &kp W      &kp E         &kp R        &kp T     &kp Y            &kp U        &kp I         &kp O      &kp P         &kp MINUS
+                &kp CAPSLOCK &hm LGUI A &hm LALT S &hm LCTRL D   &hm LSHFT F  &kp G     &kp H            &hm RSHFT J  &hm RCTRL K   &hm LALT L &hm RGUI SEMI &kp APOS
+                &none        &ltqa 3 Z  &hm RALT X &kp C         &kp V        &kp B     &kp N            &kp M        &kp ,         &hm RALT . &ltqa 3 FSLH  &none
+                                                   &ltq 7 ESCAPE &ltq 2 SPACE &kp TAB   &ltq 5 BACKSPACE &ltq 1 ENTER &ltq 6 DELETE
             >;
 
             display-name = "Base";
@@ -129,10 +129,10 @@
 
         num {
             bindings = <
-&none   &kp APOS    &kp N7      &kp N8  &kp N9      &kp BSLH    &none  &none  &none  &none  &none  &bootloader
-&none   &kp LBKT    &kp N4      &kp N5  &kp N6      &kp RBKT    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-&none   &kp NUBS    &kp N1  &kp N2  &kp N3  &kp GRAVE   &none   &none   &none  &kp RALT  &none  &none
-                            &kp EQUAL &kp N0  &kp MINUS   &none   &none   &none
+                &none &kp APOS &kp N7 &kp N8    &kp N9 &kp BSLH    &none &none     &none     &none    &none    &bootloader
+                &none &kp LBKT &kp N4 &kp N5    &kp N6 &kp RBKT    &none &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
+                &none &kp NUBS &kp N1 &kp N2    &kp N3 &kp GRAVE   &none &none     &none     &kp RALT &none    &none
+                                      &kp EQUAL &kp N0 &kp MINUS   &none &none     &none
             >;
 
             display-name = "Numbers";
@@ -140,10 +140,10 @@
 
         nav {
             bindings = <
-&bootloader  &none  &none  &none  &none  &none    &kp LC(Z)     &kp LC(V)       &kp LC(C)       &kp LC(X)       &kp LC(Y)  &none
-&none        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &none  &none
-&none        &none  &kp RALT  &none  &none  &none    &kp HOME  &kp PG_DN   &kp PG_UP   &kp END     &kp INS  &none
-                           &none  &none  &none    &kp BSPC     &kp RET       &kp DEL
+                &bootloader &none    &none    &none     &none     &none   &kp LC(Z) &kp LC(V) &kp LC(C) &kp LC(X) &kp LC(Y) &none
+                &none       &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none     &none
+                &none       &none    &kp RALT &none     &none     &none   &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp INS   &none
+                                              &none     &none     &none   &kp BSPC  &kp RET   &kp DEL
             >;
 
             display-name = "Nav";
@@ -151,10 +151,10 @@
 
         mouse {
             bindings = <
-&none   &none   &none   &none       &none       &none       &none   &none   &none   &none   &none   &none
-&none   &none   &none   &mkp MB4    &mkp MB5    &none       &none   &none   &none   &none   &none   &none
-&none   &none   &mo 4   &none       &none       &none       &none   &none   &none   &mo 4   &none   &none
-                        &mkp MB3    &mkp MB1    &mkp MB2    &mkp MB2   &mkp MB1   &mkp MB3
+                &none &none    &kp RALT &none     &none     &none      &none &none &none &none &none &none
+                &none &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none      &none &none &none &none &none &none
+                &none &none    &mo 4    &mkp MB4  &mkp MB5  &none      &none &none &none &none &none &none
+                                        &mkp MB3  &mkp MB1  &mkp MB2   &none &none &none
             >;
 
             display-name = "Mouse";
@@ -162,10 +162,10 @@
 
         scroll {
             bindings = <
-&none   &none   &none   &none       &none       &none       &none   &none   &none   &none   &none   &none
-&none   &none   &none   &mkp MB4    &mkp MB5    &none       &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none       &none       &none       &none   &none   &none   &none   &none   &none
-                        &mkp MB3    &mkp MB1    &mkp MB2    &none   &none   &none
+                &none &none    &kp RALT &none     &none     &none      &none &none &none &none &none &none
+                &none &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none      &none &none &none &none &none &none
+                &none &none    &none    &mkp MB4  &mkp MB5  &none      &none &none &none &none &none &none
+                                        &mkp MB3  &mkp MB1  &mkp MB2   &none &none &none
             >;
 
             display-name = "Scroll";
@@ -173,10 +173,10 @@
 
         symbols {
             bindings = <
-&none   &kp EQUAL  &kp LS(N1)   &kp RA(LBRC)       &kp RA(RBRC)       &none   &none   &none   &none   &none   &none &none
-&none   &kp LS(EQUAL)   &kp LS(MINUS)   &kp LS(8)       &kp LS(9)       &none       &none   &kp LSHFT   &kp LCTRL   &kp LALT   &kp LGUI   &none
-&none   &kp NUBS   &kp LS(NUBS)   &kp RA(APOS)      &kp RA(BSLH)       &none       &none   &none   &none   &none   &none   &none
-                        &none       &none       &none       &none   &none   &none
+                &none &kp EQUAL     &kp LS(N1)    &kp RA(LBRC) &kp RA(RBRC) &none   &none &none     &none     &none    &none    &none
+                &none &kp LS(EQUAL) &kp LS(MINUS) &kp LS(N8)   &kp LS(N9)   &none   &none &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
+                &none &kp NUBS      &kp LS(NUBS)  &kp RA(APOS) &kp RA(BSLH) &none   &none &none     &none     &none    &none    &none
+                                                  &none        &none        &none   &none &none     &none
             >;
 
             display-name = "Symbols";
@@ -184,10 +184,10 @@
 
         function {
             bindings = <
-&none   &kp F12   &kp F7   &kp F8       &kp F9       &kp PSCRN       &none   &none   &none   &none   &none   &none
-&none   &kp F11   &kp F4   &kp F5       &kp F6       &none       &none   &kp LSHFT   &kp LCTRL   &kp LALT   &kp LGUI    &none
-&none   &kp F10   &kp F1   &kp F2       &kp F3       &none       &none   &none   &none   &none   &kp RALT   &none
-                        &none       &kp K_MENU       &none       &none   &none   &none
+                &none &kp F12 &kp F7 &kp F8 &kp F9     &kp PSCRN   &none &none     &none     &none    &none    &none
+                &none &kp F11 &kp F4 &kp F5 &kp F6     &none       &none &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
+                &none &kp F10 &kp F1 &kp F2 &kp F3     &none       &none &none     &none     &none    &kp RALT &none
+                                     &none  &kp K_MENU &none       &none &none     &none
             >;
 
             display-name = "Function";
@@ -195,10 +195,10 @@
 
         media {
             bindings = <
-&none   &none   &none   &none       &none       &none       &kp C_BRI_MIN   &kp C_BRI_DN   &kp C_BRI_UP   &kp C_BRI_MAX   &kp C_BKLT_TOG   &btc
-&none   &none   &none   &none       &none       &none       &kp K_PREV   &kp K_VOL_DN   &kp K_VOL_UP   &kp K_NEXT   &out OUT_USB   &none
-&none   &none   &none   &none       &none       &none       &bt0   &bt1   &bt2   &bt3   &bt4   &none
-                        &none       &none       &none       &kp K_STOP2   &kp K_PLAY_PAUSE   &kp K_MUTE
+                &none &none    &none    &none     &none     &none   &kp C_BRI_MIN &kp C_BRI_DN     &kp C_BRI_UP &kp C_BRI_MAX &kp C_BKLT_TOG &btc
+                &none &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none   &kp K_PREV    &kp K_VOL_DN     &kp K_VOL_UP &kp K_NEXT    &out OUT_USB   &none
+                &none &none    &kp RALT &none     &none     &none   &bt0          &bt1             &bt2         &bt3          &bt4           &none
+                                        &none     &none     &none   &kp K_STOP2   &kp K_PLAY_PAUSE &kp K_MUTE
             >;
 
             display-name = "Media";
