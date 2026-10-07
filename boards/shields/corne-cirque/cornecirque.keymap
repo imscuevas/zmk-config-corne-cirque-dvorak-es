@@ -75,6 +75,12 @@
             bindings = <&mo>, <&kp>;
             require-prior-idle-ms = <0>;
         };
+        clw: caps_lock_word {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp CAPS>, <&capsword>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         bt0: bluetooth_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -118,10 +124,10 @@
 
         base {
             bindings = <
-                &none        &kp Q      &kp W      &kp E         &kp R        &kp T     &kp Y            &kp U        &kp I         &kp O           &kp P           &kp MINUS
-                &kp CAPSLOCK &hm LGUI A &hm LALT S &hm LCTRL D   &hm LSHFT F  &kp G     &kp H            &hm RSHFT J  &hm RCTRL K   &hm LALT L      &hm RGUI SEMI   &kp APOS
-                &none        &ltqa 3 Z  &hm RALT X &kp C         &kp V        &kp B     &kp N            &kp M        &kp COMMA     &hm RALT DOT    &ltqa 3 FSLH    &none
-                                                   &ltq 7 ESCAPE &ltq 2 SPACE &kp TAB   &ltq 5 BACKSPACE &ltq 1 ENTER &ltq 6 DELETE
+                &none   &kp Q       &kp W       &kp E           &kp R           &kp T   &kp Y               &kp U           &kp I           &kp O           &kp P           &kp MINUS
+                &clw    &hm LGUI A  &hm LALT S  &hm LCTRL D     &hm LSHFT F     &kp G   &kp H               &hm RSHFT J     &hm RCTRL K     &hm LALT L      &hm RGUI SEMI   &kp APOS
+                &none   &ltqa 3 Z   &hm RALT X  &kp C           &kp V           &kp B   &kp N               &kp M           &kp COMMA       &hm RALT DOT    &ltqa 3 FSLH    &none
+                                                &ltq 7 ESCAPE   &ltq 2 SPACE    &kp TAB &ltq 5 BACKSPACE    &ltq 1 ENTER    &ltq 6 DELETE
             >;
 
             display-name = "Base";
