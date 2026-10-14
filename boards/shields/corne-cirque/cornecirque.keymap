@@ -78,7 +78,7 @@
         clw: caps_lock_word {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp CAPS>, <&capsword>;
+            bindings = <&kp CAPS>, <&caps_word>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         bt0: bluetooth_0 {
