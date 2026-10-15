@@ -24,6 +24,6 @@ include:
   - board: nice_nano//zmk
     shield: cornecirque_right
   - board: nice_nano//zmk
-    shield: cornecirque_dongle
+    shield: cornecirque_dongle dongle_display
   - board: nice_nano//zmk
     shield: settings_reset
