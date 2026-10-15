@@ -5,20 +5,6 @@
  */
 
 #include "cornecirque.dtsi"
-#include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-
-/ {
-    input_processors {
-        zip_click_to_right_click_mapper: zip_click_to_right_click_mapper {
-            compatible = "zmk,input-processor-code-mapper";
-            #input-processor-cells = <0>;
-            type = <INPUT_EV_KEY>;
-            map = <INPUT_BTN_0 INPUT_BTN_1>;
-        };
-    };
-};
 
 &kscan0 {
     col-gpios
@@ -29,13 +15,4 @@
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>
         ;
-};
-
-&glidepoint_listener {
-    status = "okay";
-
-    scroll_mode {
-        layers = <4>;
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 4>, <&zip_click_to_right_click_mapper>;
-    };
 };
